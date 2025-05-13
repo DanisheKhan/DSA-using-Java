@@ -179,82 +179,82 @@ public class JavaBasic {
     // int num = 10;
     // System.out.println("===== If Statement =====");
     // if (num > 0) {
-    //   System.out.println("Number is positive");
+    // System.out.println("Number is positive");
     // }
 
     // // 2. If-else statement
     // System.out.println("\n===== If-Else Statement =====");
     // int age = 17;
     // if (age >= 18) {
-    //   System.out.println("You are an adult");
+    // System.out.println("You are an adult");
     // } else {
-    //   System.out.println("You are a minor");
+    // System.out.println("You are a minor");
     // }
 
     // // 3. If-else-if ladder
     // System.out.println("\n===== If-Else-If Ladder =====");
     // int score = 75;
     // if (score >= 90) {
-    //   System.out.println("Grade: A");
+    // System.out.println("Grade: A");
     // } else if (score >= 80) {
-    //   System.out.println("Grade: B");
+    // System.out.println("Grade: B");
     // } else if (score >= 70) {
-    //   System.out.println("Grade: C");
+    // System.out.println("Grade: C");
     // } else if (score >= 60) {
-    //   System.out.println("Grade: D");
+    // System.out.println("Grade: D");
     // } else {
-    //   System.out.println("Grade: F");
+    // System.out.println("Grade: F");
     // }
 
     // // 4. Nested if statements
     // System.out.println("\n===== Nested If Statements =====");
     // int number = 15;
     // if (number > 0) {
-    //   System.out.println("Number is positive");
-    //   if (number % 2 == 0) {
-    //     System.out.println("Number is even");
-    //   } else {
-    //     System.out.println("Number is odd");
-    //   }
+    // System.out.println("Number is positive");
+    // if (number % 2 == 0) {
+    // System.out.println("Number is even");
+    // } else {
+    // System.out.println("Number is odd");
+    // }
     // }
 
     // // 5. Switch statement
     // System.out.println("\n===== Switch Statement =====");
     // int day = 4;
     // switch (day) {
-    //   case 1:
-    //     System.out.println("Monday");
-    //     break;
-    //   case 2:
-    //     System.out.println("Tuesday");
-    //     break;
-    //   case 3:
-    //     System.out.println("Wednesday");
-    //     break;
-    //   case 4:
-    //     System.out.println("Thursday");
-    //     break;
-    //   case 5:
-    //     System.out.println("Friday");
-    //     break;
-    //   case 6:
-    //     System.out.println("Saturday");
-    //     break;
-    //   case 7:
-    //     System.out.println("Sunday");
-    //     break;
-    //   default:
-    //     System.out.println("Invalid day");
+    // case 1:
+    // System.out.println("Monday");
+    // break;
+    // case 2:
+    // System.out.println("Tuesday");
+    // break;
+    // case 3:
+    // System.out.println("Wednesday");
+    // break;
+    // case 4:
+    // System.out.println("Thursday");
+    // break;
+    // case 5:
+    // System.out.println("Friday");
+    // break;
+    // case 6:
+    // System.out.println("Saturday");
+    // break;
+    // case 7:
+    // System.out.println("Sunday");
+    // break;
+    // default:
+    // System.out.println("Invalid day");
     // }
 
     // // 6. Switch expression (Java 14+)
     // System.out.println("\n===== Switch Expression =====");
     // String fruit = "Apple";
     // String fruitType = switch (fruit) {
-    //   case "Apple", "Pear" -> "Pome fruit";
-    //   case "Cherry", "Plum" -> "Stone fruit";
-    //   case "Blackberry" -> "Berry";
-    //   default -> "Unknown fruit type";
+    // case "Apple", "Pear" -> "Pome fruit";
+    // case "Cherry", "Plum" -> "Stone fruit";
+    // case "Blackberry" -> "Berry";
+    // default -> "Unknown fruit type";
     // };
     // System.out.println(fruit + " is a " + fruitType);
 
@@ -263,5 +263,97 @@ public class JavaBasic {
     // int x = 5;
     // String result = (x % 2 == 0) ? "Even" : "Odd";
     // System.out.println(x + " is " + result);
+
+    // !loops
+    // // For loop - used when number of iterations is known
+    // System.out.println("\n===== For Loop =====");
+    // System.out.println("Counting from 1 to 5:");
+    // for (int i = 1; i <= 5; i++) {
+    // System.out.print(i + " ");
+    // }
+    // System.out.println();
+
+    // // While loop - used when iterations depend on a condition
+    // System.out.println("\n===== While Loop =====");
+    // System.out.println("Counting down from 5 to 1:");
+    // int j = 5;
+    // while (j >= 1) {
+    // System.out.print(j + " ");
+    // j--;
+    // }
+    // System.out.println();
+
+    // // Do-while loop - executes at least once
+    // System.out.println("\n===== Do-While Loop =====");
+    // System.out.println("Counting from 1 to 5:");
+    // int k = 1;
+    // do {
+    // System.out.print(k + " ");
+    // k++;
+    // } while (k <= 5);
+    // System.out.println();
+
+    // // Enhanced for loop (for-each) - used for collections/arrays
+    // System.out.println("\n===== Enhanced For Loop =====");
+    // int[] numbers = {1, 2, 3, 4, 5};
+    // System.out.println("Array elements:");
+    // for (int num : numbers) {
+    // System.out.print(num + " ");
+    // }
+    // System.out.println();
+
+    // // Nested loops - loop inside another loop
+    // System.out.println("\n===== Nested Loops =====");
+    // System.out.println("Pattern printing:");
+    // for (int row = 1; row <= 3; row++) {
+    // for (int col = 1; col <= row; col++) {
+    // System.out.print("* ");
+    // }
+    // System.out.println();
+    // }
+
+    // // Loop with break statement
+    // System.out.println("\n===== Loop with break =====");
+    // for (int i = 1; i <= 10; i++) {
+    // if (i == 6) {
+    // break; // exits loop when i equals 6
+    // }
+    // System.out.print(i + " ");
+    // }
+    // System.out.println();
+
+    // // Loop with continue statement
+    // System.out.println("\n===== Loop with continue =====");
+    // for (int i = 1; i <= 10; i++) {
+    // if (i % 2 == 0) {
+    // continue; // skips even numbers
+    // }
+    // System.out.print(i + " ");
+    // }
+    // System.out.println();
+
+    // // Infinite loop with control statement
+    // System.out.println("\n===== Controlled Infinite Loop =====");
+    // int counter = 1;
+    // for (;;) { // infinite loop
+    // System.out.print(counter + " ");
+    // counter++;
+    // if (counter > 5) {
+    // break; // exit condition
+    // }
+    // }
+    // System.out.println();
+
+    // ! Printing patterns
+    System.out.println("printing reverse numbers");
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter the number that u would like to reverse");
+    int n = sc.nextInt();
+    sc.close();
+    while (n > 0) {
+      int lastDigit = n % 10;
+      System.out.print(lastDigit);
+      n /= 10;
+    }
   }
 }
