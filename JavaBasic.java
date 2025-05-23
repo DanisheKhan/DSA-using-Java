@@ -345,15 +345,89 @@ public class JavaBasic {
     // System.out.println();
 
     // ! Printing patterns
-    System.out.println("printing reverse numbers");
-    Scanner sc = new Scanner(System.in);
-    System.out.println("enter the number that u would like to reverse");
-    int n = sc.nextInt();
-    sc.close();
-    while (n > 0) {
-      int lastDigit = n % 10;
-      System.out.print(lastDigit);
-      n /= 10;
-    }
+    // System.out.println("printing reverse numbers");
+    // Scanner sc = new Scanner(System.in);
+    // System.out.println("enter the number that u would like to reverse");
+    // int n = sc.nextInt();
+    // sc.close();
+    // while (n > 0) {
+    // int lastDigit = n % 10;
+    // System.out.print(lastDigit);
+    // n /= 10;
+    // }
+
+    // ! reverse the number
+    // Scanner scanner = new Scanner(System.in);
+    // System.out.print("Enter a number to reverse: ");
+    // int number = scanner.nextInt();
+
+    // int originalNumber = number;
+    // int reversedNumber = 0;
+
+    // while (number != 0) {
+    // int lastDigit = number % 10;
+    // reversedNumber = reversedNumber * 10 + lastDigit;
+    // number = number / 10;
+    // }
+
+    // System.out.println("Original number: " + originalNumber);
+    // System.out.println("Reversed number: " + reversedNumber);
+    // scanner.close();
+
+    // ! keep entering numbers till user enters a multiple of 10
+    // Scanner scanner = new Scanner(System.in);
+    // System.out.print("enter u r number:");
+    // int number = scanner.nextInt();
+    // for (int i = 0; i < 1; i++) {
+    // if (number % 10 == 0) {
+    // System.out.println("programme is break");
+    // break;
+    // }
+    // ;
+    // System.out.println(number);
+    // }
+    // scanner.close();
+
+    // ! check if a number is even or odd
+    // Scanner scanner = new Scanner(System.in);
+    // System.out.print("enter your number :");
+    // int number = scanner.nextInt();
+    // if (number % 2 == 0) {
+    //   System.out.println("this is even ");
+    // }else{
+    //   System.out.println("odd number");
+    // }
+    // scanner.close();
+
+
+    // ! write a programme of finding prime number
+    // Scanner scanner = new Scanner(System.in);
+    // System.out.print("Enter a number to check if it's prime: ");
+    // int number = scanner.nextInt();
+    // boolean isPrime = true;
+
+    // if (number <= 1) {
+    //   isPrime = false;
+    // } else {
+    //   // Check for divisibility from 2 to square root of number
+    //   for (int i = 2; i <= Math.sqrt(number); i++) {
+    //     if (number % i == 0) {
+    //       isPrime = false;
+    //       break;
+    //     }
+    //   }
+    // }
+
+    // if (isPrime) {
+    //   System.out.println(number + " is a prime number");
+    // } else {
+    //   System.out.println(number + " is not a prime number");
+    // }
+    // scanner.close();
+
+    //! pattern
+    
+
+
   }
 }
