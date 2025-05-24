@@ -393,12 +393,11 @@ public class JavaBasic {
     // System.out.print("enter your number :");
     // int number = scanner.nextInt();
     // if (number % 2 == 0) {
-    //   System.out.println("this is even ");
+    // System.out.println("this is even ");
     // }else{
-    //   System.out.println("odd number");
+    // System.out.println("odd number");
     // }
     // scanner.close();
-
 
     // ! write a programme of finding prime number
     // Scanner scanner = new Scanner(System.in);
@@ -407,27 +406,64 @@ public class JavaBasic {
     // boolean isPrime = true;
 
     // if (number <= 1) {
-    //   isPrime = false;
+    // isPrime = false;
     // } else {
-    //   // Check for divisibility from 2 to square root of number
-    //   for (int i = 2; i <= Math.sqrt(number); i++) {
-    //     if (number % i == 0) {
-    //       isPrime = false;
-    //       break;
-    //     }
-    //   }
+    // // Check for divisibility from 2 to square root of number
+    // for (int i = 2; i <= Math.sqrt(number); i++) {
+    // if (number % i == 0) {
+    // isPrime = false;
+    // break;
+    // }
+    // }
     // }
 
     // if (isPrime) {
-    //   System.out.println(number + " is a prime number");
+    // System.out.println(number + " is a prime number");
     // } else {
-    //   System.out.println(number + " is not a prime number");
+    // System.out.println(number + " is not a prime number");
     // }
     // scanner.close();
 
-    //! pattern
-    
+    // ! stars pattern
+    // System.out.print("enter the number of lines:");
+    // Scanner sc = new Scanner(System.in);
+    // int lines = sc.nextInt();
+    // for (int line = 1; line <= lines; line++) {
+    // for (int star = 1; star <= line; star++) {
+    // System.out.print("*");
+    // }
+    // System.out.println();
+    // }
+    // sc.close();
 
+    // ! Inverted Star Pattern
+    // int n=4;
+    // for (int line = 1; line <= n; line++) {
+    // for (int star = 1; star <= n-line+1; star++) {
+    // System.out.print("*");
+    // }
+    // System.out.println();
+    // }
+
+    // ! print half pyramid pattern
+    // int n=4;
+    // for(int line=0; line<=n; line++){
+    // for(int num=1; num<=line; num++){
+    // System.out.print(num);
+    // }
+    // System.out.println();
+    // }
+
+    // ! print characters
+    int n = 4;
+    char ch = 'A';
+    for (int line = 1; line <= n; line++) {
+      for (int chars = 1; chars <= line; chars++) {
+        System.out.print(ch);
+        ch++;
+      }
+      System.out.println();
+    }
 
   }
 }
