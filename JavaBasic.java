@@ -175,14 +175,14 @@ public class JavaBasic {
     // System.out.println("str instanceof String: " + (str instanceof String));
 
     // ! conditional statements
-    // // 1. If statement
+    // 1. If statement
     // int num = 10;
     // System.out.println("===== If Statement =====");
     // if (num > 0) {
     // System.out.println("Number is positive");
     // }
 
-    // // 2. If-else statement
+    // 2. If-else statement
     // System.out.println("\n===== If-Else Statement =====");
     // int age = 17;
     // if (age >= 18) {
@@ -191,7 +191,7 @@ public class JavaBasic {
     // System.out.println("You are a minor");
     // }
 
-    // // 3. If-else-if ladder
+    // 3. If-else-if ladder
     // System.out.println("\n===== If-Else-If Ladder =====");
     // int score = 75;
     // if (score >= 90) {
@@ -206,7 +206,7 @@ public class JavaBasic {
     // System.out.println("Grade: F");
     // }
 
-    // // 4. Nested if statements
+    // 4. Nested if statements
     // System.out.println("\n===== Nested If Statements =====");
     // int number = 15;
     // if (number > 0) {
@@ -218,7 +218,7 @@ public class JavaBasic {
     // }
     // }
 
-    // // 5. Switch statement
+    // 5. Switch statement
     // System.out.println("\n===== Switch Statement =====");
     // int day = 4;
     // switch (day) {
@@ -247,7 +247,7 @@ public class JavaBasic {
     // System.out.println("Invalid day");
     // }
 
-    // // 6. Switch expression (Java 14+)
+    // 6. Switch expression (Java 14+)
     // System.out.println("\n===== Switch Expression =====");
     // String fruit = "Apple";
     // String fruitType = switch (fruit) {
@@ -258,14 +258,14 @@ public class JavaBasic {
     // };
     // System.out.println(fruit + " is a " + fruitType);
 
-    // // 7. Ternary operator
+    // 7. Ternary operator
     // System.out.println("\n===== Ternary Operator =====");
     // int x = 5;
     // String result = (x % 2 == 0) ? "Even" : "Odd";
     // System.out.println(x + " is " + result);
 
     // !loops
-    // // For loop - used when number of iterations is known
+    // For loop - used when number of iterations is known
     // System.out.println("\n===== For Loop =====");
     // System.out.println("Counting from 1 to 5:");
     // for (int i = 1; i <= 5; i++) {
@@ -273,7 +273,7 @@ public class JavaBasic {
     // }
     // System.out.println();
 
-    // // While loop - used when iterations depend on a condition
+    // While loop - used when iterations depend on a condition
     // System.out.println("\n===== While Loop =====");
     // System.out.println("Counting down from 5 to 1:");
     // int j = 5;
@@ -283,7 +283,7 @@ public class JavaBasic {
     // }
     // System.out.println();
 
-    // // Do-while loop - executes at least once
+    // Do-while loop - executes at least once
     // System.out.println("\n===== Do-While Loop =====");
     // System.out.println("Counting from 1 to 5:");
     // int k = 1;
@@ -293,7 +293,7 @@ public class JavaBasic {
     // } while (k <= 5);
     // System.out.println();
 
-    // // Enhanced for loop (for-each) - used for collections/arrays
+    // Enhanced for loop (for-each) - used for collections/arrays
     // System.out.println("\n===== Enhanced For Loop =====");
     // int[] numbers = {1, 2, 3, 4, 5};
     // System.out.println("Array elements:");
@@ -302,7 +302,7 @@ public class JavaBasic {
     // }
     // System.out.println();
 
-    // // Nested loops - loop inside another loop
+    // Nested loops - loop inside another loop
     // System.out.println("\n===== Nested Loops =====");
     // System.out.println("Pattern printing:");
     // for (int row = 1; row <= 3; row++) {
@@ -312,7 +312,7 @@ public class JavaBasic {
     // System.out.println();
     // }
 
-    // // Loop with break statement
+    // Loop with break statement
     // System.out.println("\n===== Loop with break =====");
     // for (int i = 1; i <= 10; i++) {
     // if (i == 6) {
@@ -322,7 +322,7 @@ public class JavaBasic {
     // }
     // System.out.println();
 
-    // // Loop with continue statement
+    // Loop with continue statement
     // System.out.println("\n===== Loop with continue =====");
     // for (int i = 1; i <= 10; i++) {
     // if (i % 2 == 0) {
@@ -332,7 +332,7 @@ public class JavaBasic {
     // }
     // System.out.println();
 
-    // // Infinite loop with control statement
+    // Infinite loop with control statement
     // System.out.println("\n===== Controlled Infinite Loop =====");
     // int counter = 1;
     // for (;;) { // infinite loop
@@ -408,7 +408,7 @@ public class JavaBasic {
     // if (number <= 1) {
     // isPrime = false;
     // } else {
-    // // Check for divisibility from 2 to square root of number
+    // //Check for divisibility from 2 to square root of number
     // for (int i = 2; i <= Math.sqrt(number); i++) {
     // if (number % i == 0) {
     // isPrime = false;
@@ -437,22 +437,22 @@ public class JavaBasic {
     // sc.close();
 
     // ! Inverted Star Pattern
-    // int n=4;
+    // int n = 4;
     // for (int line = 1; line <= n; line++) {
-    // for (int star = 1; star <= n-line+1; star++) {
+    // for (int star = 1; star <= n - line + 1; star++) {
     // System.out.print("*");
     // }
     // System.out.println();
     // }
 
     // ! print half pyramid pattern
-    // int n=4;
-    // for(int line=0; line<=n; line++){
-    // for(int num=1; num<=line; num++){
-    // System.out.print(num);
-    // }
-    // System.out.println();
-    // }
+    int n = 4;
+    for (int line = 0; line <= n; line++) {
+      for (int num = 1; num <= line; num++) {
+        System.out.print(num);
+      }
+      System.out.println();
+    }
 
     // ! print characters
     // int n = 4;
@@ -465,7 +465,7 @@ public class JavaBasic {
     // System.out.println();
     // }
 
-    System.out.println("hi danish khan");
+    // System.out.println("hi danish khan");
 
   }
 
