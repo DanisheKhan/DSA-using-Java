@@ -1,8 +1,7 @@
 package Array;
-
 import java.util.*;
 
-public class Arrays {
+public class OneArr {
   public static void main(String[] args) {
 
     // ! creating an array
@@ -12,13 +11,13 @@ public class Arrays {
 
     // ! input
     int code[] = new int[10];
-    Scanner sc = new Scanner(System.in);
-    System.out.println("enter first code");
-    code[0] = sc.nextInt();
-    System.out.println("enter second code");
-    code[1] = sc.nextInt();
-    System.out.println(" C1 " + code[0] + ", C2 " + code[1]);
-    sc.close();
+    try (Scanner sc = new Scanner(System.in)) {
+      System.out.println("enter first code");
+      code[0] = sc.nextInt();
+      System.out.println("enter second code");
+      code[1] = sc.nextInt();
+      System.out.println(" C1 " + code[0] + ", C2 " + code[1]);
+    }
 
     // ! update
     code[0] = 500;
