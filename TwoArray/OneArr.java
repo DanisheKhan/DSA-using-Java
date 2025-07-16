@@ -1,4 +1,4 @@
-package Array;
+package TwoArray;
 import java.util.*;
 
 public class OneArr {

@@ -1,4 +1,4 @@
-package Array;
+package TwoArray;
 
 public class ThreeLinearSearch {
   public static int LS(int numbers[], int key) {

@@ -1,4 +1,4 @@
-package Array;
+package TwoArray;
 
 public class FourLargestNumber {
   public static int LN(int numbers[]) {

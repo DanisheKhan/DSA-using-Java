@@ -1,4 +1,4 @@
-package Array;
+package TwoArray;
 
 public class TenPrefixArraySum {
 
