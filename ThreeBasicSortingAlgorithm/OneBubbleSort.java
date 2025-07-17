@@ -2,11 +2,7 @@ package ThreeBasicSortingAlgorithm;
 
 public class OneBubbleSort {
 
-  // Bubble Sort: A simple sorting algorithm that repeatedly steps through the list,
-  // compares adjacent elements and swaps them if they are in the wrong order.
-  // The pass through the list is repeated until the list is sorted.
-  // Time Complexity: O(n²), Space Complexity: O(1)
-
+  
   public static void BS(int arr[]) {
     for (int turn = 0; turn < arr.length - 1; turn++) {
       for (int j = 0; j < arr.length - 1 - turn; j++) {
@@ -33,3 +29,9 @@ public class OneBubbleSort {
   }
 
 }
+
+// Bubble Sort: A simple sorting algorithm that repeatedly steps through the
+// list,
+// compares adjacent elements and swaps them if they are in the wrong order.
+// The pass through the list is repeated until the list is sorted.
+// Time Complexity: O(n²), Space Complexity: O(1)
