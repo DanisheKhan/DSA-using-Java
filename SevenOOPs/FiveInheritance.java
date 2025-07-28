@@ -4,13 +4,7 @@ public class FiveInheritance {
   public static void main(String[] args) {
     
     Fish shark= new Fish();
-    shark.eat();
-    shark.breath();
-    shark.swim();
-    shark.color = "Grey";
-    shark.fins = 2;
-    System.out.println("Shark color: " + shark.color);
-    System.out.println("Shark fins: " + shark.fins);
+    
   }
 }
 
