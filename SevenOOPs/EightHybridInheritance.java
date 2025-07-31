@@ -26,6 +26,7 @@ class Dog implements Animal, Pet {
     System.out.println("Dog eats");
   }
 
+  
   public void play() {
     System.out.println("Dog plays");
   }
