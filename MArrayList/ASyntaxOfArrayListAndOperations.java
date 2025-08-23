@@ -12,8 +12,8 @@ public class ASyntaxOfArrayListAndOperations {
     list.add(2);
     list.add(3);
     list.add(4);
-    list.add(5);
     list.add(6);
+    list.add(5);
     // System.out.println(list);
 
     // list.add(2, 25);
@@ -46,8 +46,15 @@ public class ASyntaxOfArrayListAndOperations {
 
     // Printing reverse arraylist
     // for (int i = list.size()-1; i >= 0; i--) {
-    //   System.out.print(list.get(i) + " ");
+    // System.out.print(list.get(i) + " ");
     // }
+
+    // Inbuilt sorting
+    Collections.sort(list);
+    System.err.println(list);
+
+    Collections.sort(list, Collections.reverseOrder());
+    System.out.println(list);
 
   }
 }
