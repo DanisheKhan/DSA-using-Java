@@ -124,6 +124,118 @@ public class ALinkedListBasics {
     return val;
   }
 
+  //iterative search
+  public int iterativeSearch(int key) {
+    Node temp = head;
+    int idx = 0;
+    while (temp != null) {
+      if (temp.data == key) {
+        return idx;
+      }
+      temp = temp.next;
+      idx++;
+    }
+    return -1;
+  }
+
+  //recursive search
+  public int recursiveSearch(int key) {
+    return recursiveSearchHelper(head, key, 0);
+  }
+
+  private int recursiveSearchHelper(Node node, int key, int idx) {
+    if (node == null) {
+      return -1;
+    }
+    if (node.data == key) {
+      return idx;
+    }
+    return recursiveSearchHelper(node.next, key, idx + 1);
+  }
+
+  //reverse
+  public void reverse() {
+    Node prev = null;
+    Node curr = head;
+    tail = head;
+    while (curr != null) {
+      Node next = curr.next;
+      curr.next = prev;
+      prev = curr;
+      curr = next;
+    }
+    head = prev;
+  }
+
+  //Find and remove nth node form end
+  public void removeNthFromEnd(int n) {
+    if (head == null || n <= 0) {
+      System.out.println("Invalid operation");
+      return;
+    }
+    // Step 1: Find size
+    Node temp = head;
+    int len = 0;
+    while (temp != null) {
+      len++;
+      temp = temp.next;
+    }
+    if (n > len) {
+      System.out.println("n is greater than the length of the list");
+      return;
+    }
+    // Step 2: Remove (len-n)th node from start
+    if (n == len) {
+      removeFirst();
+      return;
+    }
+    int idx = len - n;
+    Node prev = head;
+    for (int i = 1; i < idx; i++) {
+      prev = prev.next;
+    }
+    Node toRemove = prev.next;
+    prev.next = toRemove.next;
+    if (toRemove == tail) {
+      tail = prev;
+    }
+    size--;
+  }
+
+  //check if LL is a palindrome
+  public boolean isPalindrome() {
+    if (head == null || head.next == null) {
+      return true;
+    }
+    // Find middle
+    Node slow = head;
+    Node fast = head;
+    while (fast != null && fast.next != null) {
+      slow = slow.next;
+      fast = fast.next.next;
+    }
+    // Reverse second half
+    Node prev = null;
+    Node curr = slow;
+    while (curr != null) {
+      Node next = curr.next;
+      curr.next = prev;
+      prev = curr;
+      curr = next;
+    }
+    // Compare halves
+    Node left = head;
+    Node right = prev;
+    while (right != null) {
+      if (left.data != right.data) {
+        return false;
+      }
+      left = left.next;
+      right = right.next;
+    }
+    return true;
+  }
+
   public static void main(String[] args) {
     ALinkedListBasics ll = new ALinkedListBasics();
     ll.addFirst(2);
@@ -137,5 +249,11 @@ public class ALinkedListBasics {
     // ll.print();
     // ll.removeLast();
     // ll.print();
+
+    // System.out.println("at index : f"+ll.iterativeSearch(50));
+
+    ll.reverse();
+    ll.print();
   }
+
 }
