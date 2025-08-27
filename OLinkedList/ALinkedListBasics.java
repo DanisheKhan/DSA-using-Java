@@ -251,7 +251,38 @@ public class ALinkedListBasics {
   }
 
   // remove a loop or cycle in LL
-  
+  public void removeCycle() {
+    if (head == null || head.next == null) return;
+
+    Node slow = head;
+    Node fast = head;
+    boolean cycleExists = false;
+
+    // Detect cycle
+    while (fast != null && fast.next != null) {
+      slow = slow.next;
+      fast = fast.next.next;
+      if (slow == fast) {
+        cycleExists = true;
+        break;
+      }
+    }
+
+    if (!cycleExists) return;
+
+    // Find start of cycle
+    slow = head;
+    Node prev = null;
+    while (slow != fast) {
+      prev = fast;
+      slow = slow.next;
+      fast = fast.next;
+    }
+
+    // Remove cycle
+    prev.next = null;
+  }
+
 
 
   public static void main(String[] args) {
