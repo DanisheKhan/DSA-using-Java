@@ -124,7 +124,7 @@ public class ALinkedListBasics {
     return val;
   }
 
-  //iterative search
+  // iterative search
   public int iterativeSearch(int key) {
     Node temp = head;
     int idx = 0;
@@ -138,7 +138,7 @@ public class ALinkedListBasics {
     return -1;
   }
 
-  //recursive search
+  // recursive search
   public int recursiveSearch(int key) {
     return recursiveSearchHelper(head, key, 0);
   }
@@ -153,7 +153,7 @@ public class ALinkedListBasics {
     return recursiveSearchHelper(node.next, key, idx + 1);
   }
 
-  //reverse
+  // reverse
   public void reverse() {
     Node prev = null;
     Node curr = head;
@@ -167,7 +167,7 @@ public class ALinkedListBasics {
     head = prev;
   }
 
-  //Find and remove nth node form end
+  // Find and remove nth node form end
   public void removeNthFromEnd(int n) {
     if (head == null || n <= 0) {
       System.out.println("Invalid operation");
@@ -202,7 +202,7 @@ public class ALinkedListBasics {
     size--;
   }
 
-  //check if LL is a palindrome
+  // check if LL is a palindrome
   public boolean isPalindrome() {
     if (head == null || head.next == null) {
       return true;
@@ -236,14 +236,32 @@ public class ALinkedListBasics {
     return true;
   }
 
+  // detect cycle exists or not(Floyd's cycle algorithm)
+  public boolean isCycle() {
+    Node slow = head;
+    Node fast = head;
+    while (fast != null && fast.next != null) {
+      slow = slow.next;
+      fast = fast.next.next;
+      if (slow == fast) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  // remove a loop or cycle in LL
+  
+
+
   public static void main(String[] args) {
     ALinkedListBasics ll = new ALinkedListBasics();
-    ll.addFirst(2);
-    ll.addFirst(1);
-    ll.addLast(3);
-    ll.addLast(4);
-    ll.add(2, 50);
-    ll.print();
+    // ll.addFirst(2);
+    // ll.addFirst(1);
+    // ll.addLast(3);
+    // ll.addLast(4);
+    // ll.add(2, 50);
+    // ll.print();
     // System.out.println(size);
     // ll.removeFirst();
     // ll.print();
@@ -252,8 +270,23 @@ public class ALinkedListBasics {
 
     // System.out.println("at index : f"+ll.iterativeSearch(50));
 
-    ll.reverse();
-    ll.print();
+    // ll.reverse();
+    // ll.print();
+
+    // Example: Create a cycle in the linked list and check for cycle
+    ll.addLast(1);
+    ll.addLast(2);
+    ll.addLast(3);
+    ll.addLast(4);
+
+    // Creating a cycle: tail.next points to head
+    tail.next = head;
+
+    if (ll.isCycle()) {
+      System.out.println("Cycle detected in the linked list.");
+    } else {
+      System.out.println("No cycle detected.");
+    }
   }
 
 }
